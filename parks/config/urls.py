@@ -4,6 +4,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
+from parks import views
+
 
 urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
@@ -15,6 +17,7 @@ urlpatterns = [
         include("parks.images.urls", namespace="images"),
     ),
     path("accounts/", include("allauth.urls")),
+    path("" , views.ReactAppView.as_view()),
     # Your stuff: custom urls includes go here
 ] + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
