@@ -67,10 +67,11 @@ THIRD_PARTY_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'rest_framework',
+    'rest_framework', # Rest Framework
     'rest_auth',
     'rest_framework.authtoken',
     'rest_auth.registration',
+    'corsheaders' # To accept requests from React
 ]
 LOCAL_APPS = [
     'parks.users.apps.UsersAppConfig',
