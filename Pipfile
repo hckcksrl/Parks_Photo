@@ -34,6 +34,7 @@ django_coverage_plugin = "==1.5.0"
 pylint = "*"
 django-rest-auth = "*"
 djangorestframework-jwt = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
